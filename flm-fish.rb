@@ -12,7 +12,7 @@ class FlmFish < Formula
     bin.install 'vagrant-ssh','vagrant-ssh-debug'
     etc.install 'config.fish'
     system "echo Adding 'source /usr/local/etc/config.fish' to ~/.config/fish/fish.config if not present..."
-    system "mkdir -p ~/.config/fish && touch ~/.config/fish/fish.config && if [ \"grep -q '^source /usr/local/etc/config.fish' ~/.config/fish/fish.config\" == \"\" ]; then echo 'source /usr/local/etc/config.fish' | tee -a ~/.config/fish/fish.config; fi"
+    system "mkdir -p ~/.config/fish && touch ~/.config/fish/fish.config && if [ \"$(\"grep -q '^source /usr/local/etc/config.fish' ~/.config/fish/fish.config\")\" == \"\" ]; then echo 'source /usr/local/etc/config.fish' | tee -a ~/.config/fish/fish.config; fi"
     system "echo Changing default shell to fish requires your password..."
     system "mkdir -p ~/.config/fish && if [ \"grep -q '^/usr/local/bin/fish$' /etc/shells\" == \"\" ]; then echo '/usr/local/bin/fish' | sudo tee -a /etc/shells; fi"
     system "chsh -s /usr/local/bin/fish"
