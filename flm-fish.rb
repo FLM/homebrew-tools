@@ -7,7 +7,6 @@ class FlmFish < Formula
   version '0.1'
 
   depends_on 'fishfish'
-  depends_on 'vagrant'
 
   def install
     system ""
