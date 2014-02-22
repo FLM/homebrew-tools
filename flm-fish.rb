@@ -3,7 +3,7 @@ require 'formula'
 class FlmFish < Formula
   homepage 'https://github.com/FLM/tools'
   url 'https://github.com/FLM/tools'
-  sha1 '5f00c3886a5f2602e099f7322e369215ef25cdc3'
+  sha1 'c882ba107e6b0886dd4d8ccd51274eda2680b5be'
   version '0.1'
 
   depends_on 'fishfish'
