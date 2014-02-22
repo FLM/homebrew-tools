@@ -6,7 +6,8 @@ class FlmFish < Formula
   # sha1 '1b9574e4ba391c87f19de18bf6295b55cf298c89'
   version '0.1'
 
-  depends_on :fishfish :vagrant
+  depends_on :fishfish
+  depends_on :vagrant
 
   def install
     system ""
