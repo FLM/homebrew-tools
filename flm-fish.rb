@@ -4,7 +4,7 @@ class FlmFish < Formula
   homepage 'https://github.com/FLM/tools'
   url 'https://github.com/FLM/tools', :using => :git
   sha1 'c882ba107e6b0886dd4d8ccd51274eda2680b5be'
-  version '0.3'
+  version '0.4'
 
   depends_on 'fishfish'
 
